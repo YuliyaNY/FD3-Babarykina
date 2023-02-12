@@ -1,0 +1,56 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", helvetica, arial, sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.GroceryList {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 100px 20px;
+}
+
+.GroceryList .StoreName {
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.GroceryList .Items {
+    border-radius: 3px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.GroceryList .Items .Item {
+    border: solid 1px #C1C3D1;
+    color:#666B85;
+}
+
+.GroceryList .Items .Item td {
+    padding: 20px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 18px;
+    border-right: 1px solid #C1C3D1;
+}
+
+.GroceryList .Items .Item td .Image {
+    display: block;
+    max-width: 130px;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 767px) {
+	.GroceryList .Items, .GroceryList .Items tbody, .GroceryList .Items .Item, .GroceryList .Items .Item td { 
+	    display: block; 
+    }
+}

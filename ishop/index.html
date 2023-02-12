@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery list</title>
+</head>
+<body>
+    <div id="container"></div> 
+      
+    <script src="https://unpkg.com/react@15/dist/react.js"></script> 
+    <script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script> 
+    <script src="GroceryList.js"></script>
+    <link rel="stylesheet" type="text/css" href="GroceryList.css" />
+
+    <script>
+        var ishop = `Trader Joe's`;
+
+        var itemsArr = [ 
+            {title: 'Bread', price: 5, image: 'https://seasonskosher.com/content/images/thumbs/0384999_korns-rye-bread.jpeg', count: 10, id: 0},
+            {title: 'Jogurt', price: 4, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq4356tt7eU8zt1C18FS8eiftBZ1R13FXIh9VNkwBMDqnG3rX8rpoh-0IkpgOUxOhx8yI&usqp=CAU', count: 5, id: 1},
+            {title: 'Pasta ', price: 10, image: 'https://cdn.shopify.com/s/files/1/0604/8940/0500/products/Tubettoni_2000x2000_f52285cf-1d12-413d-bf51-0e6164997eba_220x@2x.jpg?v=1645277867', count: 7, id: 2},
+            {title: 'Chocolate ', price: 3, image: 'http://cdn.shopify.com/s/files/1/0630/7525/4498/products/milkaextra_3.png?v=1651180160', count: 3, id: 3} 
+        ];
+
+        ReactDOM.render (
+            React.createElement(GroceryList, {storeName: ishop, items: itemsArr}), 
+            document.getElementById('container') 
+        );
+    </script>
+</body>
+</html>
