@@ -1,0 +1,157 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", helvetica, arial, sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.GroceryList {
+    width: calc(100% - 40px);
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 100px 0px;
+}
+
+.GroceryList .StoreName {
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+
+.GroceryList .Items {
+    border-radius: 3px;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.GroceryList .Items .Item {
+    border: solid 1px #C1C3D1;
+    color:#666B85;
+}
+
+.GroceryList .Items .Item.Selected {
+    background-color: #e2e2e2;
+}
+
+.GroceryList .Items .Item td {
+    padding: 20px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 18px;
+    border-right: 1px solid #C1C3D1;
+}
+
+.GroceryList .Items .Item td .Image {
+    display: block;
+    max-width: 130px;
+    margin: 0 auto;
+}
+.Button {
+    background: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #666B85;
+    border: solid 1px #af1bff;
+    transition: background-color .3s ease;
+}
+.Button:hover {
+    background-color: #af1bff;
+    color: #fff;
+}
+.AddNewButton {
+    margin-top: 50px;
+}
+.Button:disabled {
+    border: solid 1px #C1C3D1;
+    color:#C1C3D1;
+    cursor: context-menu;
+}
+.Button:disabled:hover {background-color: #fff;}
+
+/**** Item Card ****/
+.GroceryItemCard {
+    padding: 50px 20px;
+    margin-top: 50px;
+    border: solid 1px #af1bff;
+    font-size: 18px;
+}
+.GroceryItemCard h2 {
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.GroceryItemCard p {
+    margin-bottom: 10px;
+}
+.Error {
+    display: inline-block;
+    margin-left: 15px;
+    color: red;
+}
+.error {
+    color: red;
+    display: inline-block;
+    margin-left: 15px;
+}
+
+/* Form */
+.FormTitle {
+    font-size: 25px;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+form {
+    padding: 50px 20px;
+    margin-top: 50px;
+    border: solid 1px #af1bff;
+}
+form label {
+    display: inline-block;
+    min-width: 60px;
+    margin-right: 15px;
+}
+form input {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: none;
+    border: solid 1px #C1C3D1;
+}
+form .Button {
+    margin-bottom: 0; 
+    margin-right: 20px;
+}
+form span {
+    display: inline-block;
+    margin-left: 15px;
+    color: red;
+}
+form p {
+    margin-bottom: 20px;
+}
+form p span {
+    color: #000;
+    margin-left: 0;
+    min-width: 60px;
+    margin-right: 15px;
+}
+
+
+/**** Media ****/
+@media only screen and (max-width: 767px) {
+	.GroceryList .Items, 
+    .GroceryList 
+    .Items tbody, 
+    .GroceryList .Items .Item,
+    .GroceryList .Items .Item td { 
+	    display: block; 
+    }
+}

@@ -1,0 +1,30 @@
+[
+    {
+        "title": "Bread", 
+        "price": 5, 
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd_yaGMFfaGCMf4OQq3QRdhsIM1DgOhBmW0w&usqp=CAU", 
+        "count": 10, 
+        "id": 0
+    },
+    {
+        "title": "Jogurt", 
+        "price": 4, 
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq4356tt7eU8zt1C18FS8eiftBZ1R13FXIh9VNkwBMDqnG3rX8rpoh-0IkpgOUxOhx8yI&usqp=CAU", 
+        "count": 5, 
+        "id": 1
+    },
+    {
+        "title": "Pasta", 
+        "price": 10, 
+        "image": "https://cdn.shopify.com/s/files/1/0604/8940/0500/products/Tubettoni_2000x2000_f52285cf-1d12-413d-bf51-0e6164997eba_220x@2x.jpg?v=1645277867", 
+        "count": 7, 
+        "id": 2
+    },
+    {
+        "title": "Chocolate", 
+        "price": 3, 
+        "image": "https://digitalcontent.api.tesco.com/v2/media/ghs/b0b792c7-5e0e-4b09-aa7d-75d882517b60/c95d95d9-a5eb-4068-a40a-da6e7be54aa0_1170613762.jpeg?h=540&w=540", 
+        "count": 3, 
+        "id": 3
+    } 
+]
