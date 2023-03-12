@@ -5,9 +5,12 @@ class BR2JSX extends Component {
   render() {
     let arr = this.props.text.split(/\<\s*[b][r]\s*\/?\>/);
     let newArr = [];
-   
+
     arr.forEach((word, i) => {
-        newArr.push(word, <br key={i}/>);
+      if(i) {
+        newArr.push(<br key={i}/>);
+      }
+      newArr.push(word);
     });
     
     return (

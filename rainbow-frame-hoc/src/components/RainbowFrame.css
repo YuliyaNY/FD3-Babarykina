@@ -1,0 +1,8 @@
+.RainbowFrame {
+    width: 600px;
+    margin-top: 50px;
+    text-align: center;
+}
+.RainbowFrame, .RainbowFrame div {
+    padding: 20px;
+}
